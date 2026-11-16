@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decision Pivoting | The Basics of AI Computing and Adapting</title>
+
+  <!-- Inter font from Google Fonts (regular, medium, and semi-bold) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="adapting-page">
+
+  <header class="site-header-bar">
+    <nav class="site-nav">
+      <ul class="nav-list">
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button computing-nav">Computing ▾</summary>
+            <ul class="dropdown-panel">
+              <li><a class="topic-button computing-link" href="how-ai-learns.html">How AI Learns</a></li>
+              <li><a class="topic-button computing-link" href="computing-algorithms.html">Computing Algorithms</a></li>
+              <li><a class="topic-button computing-link" href="model-differences.html">Model differences</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li><a class="nav-button home-nav" href="index.html">Home</a></li>
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button adapting-nav">Adapting ▾</summary>
+            <ul class="dropdown-panel adapting-panel">
+              <li><a class="topic-button adapting-link" href="ai-decision-making.html">AI Decision Making</a></li>
+              <li><a class="topic-button adapting-link" href="ai-idea-pivoting.html">AI Idea Pivoting</a></li>
+            </ul>
+          </details>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="page-content">
+
+      <h1 class="page-title">Decision Pivoting</h1>
+
+      <section class="content-card">
+        <h2 class="card-heading">1. Technical Mechanisms (How AI Pivots)</h2>
+        <ul class="card-list">
+          <li>What it is: The underlying processes that allow models to change direction mid-conversation without being retrained.</li>
+          <li>Core Mechanisms:
+            <ul class="card-list">
+              <li>Context Window &amp; In-Context Learning: Operates using a fixed token buffer to store history, allowing the model to analyze past dialogue and new overrides simultaneously.</li>
+              <li>Attention Weight Re-allocation: Self-attention mechanisms shift numerical focus weights away from older concepts toward new directional keywords.</li>
+              <li>Prompt Steering: Blends foundational system rules with dynamic user-injected overrides (e.g., tone, persona, or framework changes).</li>
+            </ul>
+          </li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>Oracle Tech Articles (Dynamic Contextual Adaptation)</li>
+              <li>PromptHub Guides (In-Context Learning &amp; Prompt Steering)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <img class="diagram" src="images/pivoting-1.png" alt="Diagram of how AI changes direction mid-conversation">
+
+      <section class="content-card">
+        <h2 class="card-heading">2. Common Types of AI Idea Pivots</h2>
+        <ul class="card-list">
+          <li>Categories of Conversation Shifts:
+            <ul class="card-list">
+              <li>Scope: Adjusting depth or brevity (e.g., turning a long explanation into bullet points).</li>
+              <li>Perspective: Changing tone, persona, or target audience (e.g., explaining code for a beginner vs. an expert).</li>
+              <li>Format: Changing how information is displayed (e.g., turning text into a table or list).</li>
+              <li>Directional: Shifting to a completely new subject while carrying over relevant context.</li>
+            </ul>
+          </li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>IBM watsonx Documentation (Zero-Shot Task Pivoting)</li>
+              <li>PromptHub Guides (In-Context Learning &amp; Prompt Steering)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <img class="diagram" src="images/pivoting-2.png" alt="Diagram of the types of AI idea pivots">
+
+      <section class="content-card">
+        <h2 class="card-heading">3. Best Practices for Directing AI Pivots</h2>
+        <ul class="card-list">
+          <li>Effective Prompt Engineering Techniques:
+            <ul class="card-list">
+              <li>Explicit Constraint Overrides: State clearly what past context to discard and what new parameters to adopt (e.g., "Ignore previous budget constraints...").</li>
+              <li>Chain-of-Thought Steering: Prompt the model to step through the logical transition explicitly before generating the final answer.</li>
+              <li>Role-Playing Overrides: Shift the model's persona to force a distinct conceptual perspective (e.g., acting as a consultant).</li>
+            </ul>
+          </li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>LaunchDarkly Tech Blog (Prompt Engineering Best Practices: Dynamic Conversations)</li>
+              <li>Oracle Tech Articles (What Is Prompt Engineering &amp; Dynamic Contextual Adaptation)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+
+</body>
+</html>

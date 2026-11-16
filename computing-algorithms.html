@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computing Algorithms | The Basics of AI Computing and Adapting</title>
+
+  <!-- Inter font from Google Fonts (regular, medium, and semi-bold) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="computing-page">
+
+  <header class="site-header-bar">
+    <nav class="site-nav">
+      <ul class="nav-list">
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button computing-nav">Computing ▾</summary>
+            <ul class="dropdown-panel">
+              <li><a class="topic-button computing-link" href="how-ai-learns.html">How AI Learns</a></li>
+              <li><a class="topic-button computing-link" href="computing-algorithms.html">Computing Algorithms</a></li>
+              <li><a class="topic-button computing-link" href="model-differences.html">Model differences</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li><a class="nav-button home-nav" href="index.html">Home</a></li>
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button adapting-nav">Adapting ▾</summary>
+            <ul class="dropdown-panel adapting-panel">
+              <li><a class="topic-button adapting-link" href="ai-decision-making.html">AI Decision Making</a></li>
+              <li><a class="topic-button adapting-link" href="ai-idea-pivoting.html">AI Idea Pivoting</a></li>
+            </ul>
+          </details>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="page-content">
+
+      <h1 class="page-title">Computing Algorithms</h1>
+
+      <img class="diagram" src="images/algorithms-1.png" alt="Diagram of the main types of AI algorithms">
+
+      <section class="content-card">
+        <h2 class="card-heading">1. Supervised Learning (Learning from Examples)</h2>
+        <ul class="card-list">
+          <li>What it is: Models trained using input data paired with correct, human-labeled outputs.</li>
+          <li>Key algorithms:
+            <ul class="card-list">
+              <li>Linear &amp; Logistic Regression: Fits straight lines for continuous numbers or uses the sigmoid function for binary classification (spam vs. not spam).</li>
+              <li>Decision Trees &amp; Random Forests: Makes recursive feature splits or combines hundreds of trees to boost accuracy and prevent overfitting.</li>
+              <li>Support Vector Machines (SVM): Finds optimal hyper-planes to separate data classes.</li>
+            </ul>
+          </li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>Coursera / IBM Skills Network – Top Machine Learning Algorithms Explained</li>
+              <li>GeeksforGeeks – Artificial Intelligence Algorithms Overview</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-heading">2. Unsupervised Learning (Finding Hidden Patterns)</h2>
+        <ul class="card-list">
+          <li>What it is: Algorithms that analyze completely unlabeled data to discover structures, groupings, or anomalies independently.</li>
+          <li>Key algorithms:
+            <ul class="card-list">
+              <li>K-Means Clustering: Groups data points by minimizing distances to cluster centroids.</li>
+              <li>Principal Component Analysis (PCA): Reduces dimensionality while retaining core variance.</li>
+              <li>DBSCAN: Groups dense regions and flags isolated points as noise.</li>
+            </ul>
+          </li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>AWS Machine Learning Tech Guide – What is Unsupervised Machine Learning?</li>
+              <li>Tableau Learning Center – Artificial Intelligence Algorithms: A Complete Overview</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <img class="diagram" src="images/algorithms-2.png" alt="Diagram comparing AI algorithm types">
+
+      <section class="content-card">
+        <h2 class="card-heading">3. Deep Learning &amp; Neural Networks</h2>
+        <ul class="card-list">
+          <li>What it is: Multi-layered neural networks built to handle high-dimensional inputs like images, video, and human language.</li>
+          <li>Key architectures:
+            <ul class="card-list">
+              <li>CNNs: Captures spatial hierarchies in visual data (computer vision/object detection).</li>
+              <li>RNNs &amp; LSTMs: Processes sequential time-series data across time steps.</li>
+              <li>Transformer Networks: Uses self-attention mechanisms, powering modern Large Language Models (LLMs) like GPT and BERT.</li>
+              <li>GANs: Pits a generator against a discriminator to create hyper-realistic synthetic data.</li>
+            </ul>
+          </li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>Wikipedia – List of Artificial Intelligence Algorithms</li>
+              <li>Google Cloud Discover – Deep Learning Architectures Explained</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-heading">4. Reinforcement Learning &amp; Optimization</h2>
+        <ul class="card-list">
+          <li>What it is: Algorithms focused on decision-making, environmental feedback, and iterative weight adjustments.</li>
+          <li>Key algorithms:
+            <ul class="card-list">
+              <li>Q-Learning &amp; DQN: Model-free learning where agents maximize cumulative rewards.</li>
+              <li>PPO: Policy-gradient algorithm used to fine-tune modern AI assistants via RLHF.</li>
+              <li>Gradient Descent &amp; Adam Optimizer: The calculus-driven engines that adjust neural network parameters to minimize error loss.</li>
+            </ul>
+          </li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>Medium (Data Science Section) – List of 100+ AI Algorithms</li>
+              <li>Nature Journal – Mastering complex systems with deep reinforcement learning and search</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+
+</body>
+</html>

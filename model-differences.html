@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Different language models | The Basics of AI Computing and Adapting</title>
+
+  <!-- Inter font from Google Fonts (regular, medium, and semi-bold) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="computing-page">
+
+  <header class="site-header-bar">
+    <nav class="site-nav">
+      <ul class="nav-list">
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button computing-nav">Computing ▾</summary>
+            <ul class="dropdown-panel">
+              <li><a class="topic-button computing-link" href="how-ai-learns.html">How AI Learns</a></li>
+              <li><a class="topic-button computing-link" href="computing-algorithms.html">Computing Algorithms</a></li>
+              <li><a class="topic-button computing-link" href="model-differences.html">Model differences</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li><a class="nav-button home-nav" href="index.html">Home</a></li>
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button adapting-nav">Adapting ▾</summary>
+            <ul class="dropdown-panel adapting-panel">
+              <li><a class="topic-button adapting-link" href="ai-decision-making.html">AI Decision Making</a></li>
+              <li><a class="topic-button adapting-link" href="ai-idea-pivoting.html">AI Idea Pivoting</a></li>
+            </ul>
+          </details>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="page-content">
+
+      <h1 class="page-title">Different language models</h1>
+
+      <section class="content-card">
+        <p class="card-text">AI Models: A Quick Comparison Summary</p>
+        <p class="card-text">Artificial Intelligence models are generally defined by what they are designed to do and how they process data. They can be broken down into four primary categories:</p>
+      </section>
+
+      <img class="diagram" src="images/models-1.png" alt="Diagram of the four main categories of AI models">
+
+      <section class="content-card">
+        <h2 class="card-heading">1. Discriminative AI (Classifiers &amp; Predictors)</h2>
+        <ul class="card-list">
+          <li>Goal: Categorize input data or forecast future numbers.</li>
+          <li>How It Works: Learns boundary lines between different data types. It calculates conditional probabilities—asking "Given this data point, what label or class does it belong to?"</li>
+          <li>Best Used For: Spam filtering, medical diagnosis, fraud detection, and financial forecasting.</li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-heading">2. Generative AI (Creators &amp; Synthesizers)</h2>
+        <ul class="card-list">
+          <li>Goal: Produce brand-new, realistic data (images, video, audio, or 3D assets).</li>
+          <li>How It Works: Learns the underlying structure and pattern of the training dataset. It samples from that learned pattern to generate completely new output.</li>
+          <li>Key Architectures: Diffusion Models (gradually refining noise into clean images) and GANs (two networks competing to produce realistic results).</li>
+          <li>Best Used For: Digital art, image editing, synthetic voice creation, and design tools.</li>
+        </ul>
+      </section>
+
+      <img class="diagram" src="images/models-2.png" alt="Diagram comparing AI model types">
+
+      <section class="content-card">
+        <h2 class="card-heading">3. Large Language &amp; Sequence Models (LLMs)</h2>
+        <ul class="card-list">
+          <li>Goal: Understand, summarize, translate, and generate human language and code.</li>
+          <li>How It Works: Powered by the Transformer architecture, which uses self-attention mechanisms to analyze relationships between words simultaneously rather than one at a time.</li>
+          <li>Best Used For: Conversational assistants, automated code generation, document summarization, and translation.</li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-heading">4. Reinforcement Learning &amp; Agentic Models</h2>
+        <ul class="card-list">
+          <li>Goal: Make autonomous decisions in dynamic environments to achieve a goal.</li>
+          <li>How It Works: Learns through trial and error. An "agent" takes actions in an environment, receiving rewards for good moves and penalties for mistakes.</li>
+          <li>Best Used For: Robotics, autonomous driving, strategic gaming (e.g., chess or Go), and automated multi-step workflows.</li>
+          <li>Reference / Source List
+            <ul class="card-list">
+              <li>IBM: Generative AI vs. Predictive AI: What's the Difference? (IBM Think Library)</li>
+              <li>Microsoft AI Hub: Understanding Types of Machine Learning Models</li>
+              <li>GeeksforGeeks: Generative vs. Discriminative Models in AI</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+
+</body>
+</html>

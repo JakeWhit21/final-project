@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Decision Making | The Basics of AI Computing and Adapting</title>
+
+  <!-- Inter font from Google Fonts (regular, medium, and semi-bold) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="adapting-page">
+
+  <header class="site-header-bar">
+    <nav class="site-nav">
+      <ul class="nav-list">
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button computing-nav">Computing ▾</summary>
+            <ul class="dropdown-panel">
+              <li><a class="topic-button computing-link" href="how-ai-learns.html">How AI Learns</a></li>
+              <li><a class="topic-button computing-link" href="computing-algorithms.html">Computing Algorithms</a></li>
+              <li><a class="topic-button computing-link" href="model-differences.html">Model differences</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li><a class="nav-button home-nav" href="index.html">Home</a></li>
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button adapting-nav">Adapting ▾</summary>
+            <ul class="dropdown-panel adapting-panel">
+              <li><a class="topic-button adapting-link" href="ai-decision-making.html">AI Decision Making</a></li>
+              <li><a class="topic-button adapting-link" href="ai-idea-pivoting.html">AI Idea Pivoting</a></li>
+            </ul>
+          </details>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="page-content">
+
+      <h1 class="page-title">AI Decision Making</h1>
+
+      <img class="diagram" src="images/decisions-1.png" alt="Diagram of the five-step AI decision pipeline with a feedback loop">
+
+      <section class="content-card">
+        <h2 class="card-heading">1. The 5-Step AI Decision Pipeline</h2>
+        <ul class="card-list">
+          <li>What it is: The sequential stages an AI system goes through to convert raw data into a chosen action.</li>
+          <li>Core Stages:
+            <ul class="card-list">
+              <li>Environmental Sensing &amp; Ingestion: Collecting raw inputs like text, camera feeds, or sensor logs.</li>
+              <li>Feature Extraction &amp; Vector Representation: Translating inputs into numerical vectors (embeddings) so computers can mathematically process them.</li>
+              <li>Model Scoring &amp; Inference: Passing vectors through neural networks or trees to calculate probability/utility scores.</li>
+              <li>Rule Evaluation &amp; Decision Boundary Application: Mapping probabilities to actions using threshold logic or policy functions.</li>
+              <li>Execution &amp; Closed-Loop Feedback: Executing the final choice and logging the outcome to refine future iterations.</li>
+            </ul>
+          </li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>Teradata Insights – AI Decision-Making: How It Works, Examples, and Best Practices</li>
+              <li>Veritis – Using AI in Decision Making: Process and Automation Paradigms</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-heading">2. 3 Core Paradigms of AI Decision Logic</h2>
+        <ul class="card-list">
+          <li>How AI evaluates options:
+            <ul class="card-list">
+              <li>Probabilistic / Classification Decisions: Assigns statistical likelihoods based on historical training data (e.g., medical diagnostic tools).</li>
+              <li>Sequential / Reinforcement Decisions: Balances immediate gains against future consequences using Markov Decision Processes and Q-learning (e.g., autonomous drone navigation).</li>
+              <li>Optimization Decisions: Uses linear programming and heuristics to pick mathematically optimal actions under strict resource constraints (e.g., logistics delivery routing).</li>
+            </ul>
+          </li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>MIT Sloan School of Management – A Framework for Determining When AI Can Make Decisions</li>
+              <li>IBM Tech Guides – What is Reinforcement Learning and Sequential Decision Making?</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-heading">3. Modes of AI Execution (Human Control Levels)</h2>
+        <ul class="card-list">
+          <li>Assisted Intelligence: AI automates repetitive calculations while humans make the final call (e.g., medical imaging flags).</li>
+          <li>Augmented Intelligence: AI actively collaborates by offering predictive scenarios and option matrices to help human decisions.</li>
+          <li>Automated / Agentic Intelligence: The AI evaluates, decides, and executes in real time without human intervention (e.g., self-driving lane keeping or high-frequency trading).</li>
+          <li>Sources:
+            <ul class="card-list">
+              <li>Teradata Insights – AI Decision-Making: How It Works, Examples, and Best Practices</li>
+              <li>Veritis – Using AI in Decision Making: Process and Automation Paradigms</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <img class="diagram wide-diagram" src="images/decisions-2.png" alt="Chart comparing assisted, augmented, and automated AI by who makes the decision">
+
+    </article>
+  </main>
+
+</body>
+</html>

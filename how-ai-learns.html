@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How AI Learns | The Basics of AI Computing and Adapting</title>
+
+  <!-- Inter font from Google Fonts (regular, medium, and semi-bold) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="computing-page">
+
+  <header class="site-header-bar">
+    <nav class="site-nav">
+      <ul class="nav-list">
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button computing-nav">Computing ▾</summary>
+            <ul class="dropdown-panel">
+              <li><a class="topic-button computing-link" href="how-ai-learns.html">How AI Learns</a></li>
+              <li><a class="topic-button computing-link" href="computing-algorithms.html">Computing Algorithms</a></li>
+              <li><a class="topic-button computing-link" href="model-differences.html">Model differences</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li><a class="nav-button home-nav" href="index.html">Home</a></li>
+
+        <li>
+          <details class="nav-dropdown">
+            <summary class="nav-button adapting-nav">Adapting ▾</summary>
+            <ul class="dropdown-panel adapting-panel">
+              <li><a class="topic-button adapting-link" href="ai-decision-making.html">AI Decision Making</a></li>
+              <li><a class="topic-button adapting-link" href="ai-idea-pivoting.html">AI Idea Pivoting</a></li>
+            </ul>
+          </details>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="page-content">
+
+      <h1 class="page-title">How AI Learns</h1>
+
+      <section class="content-card">
+        <p class="card-text">Unlike traditional software, which relies entirely on hard-coded rules written by human developers, Artificial Intelligence (specifically Machine Learning and Deep Learning) discovers rules automatically by finding patterns in massive datasets.</p>
+        <p class="card-text">This learning journey can be broken down into five fundamental phases:</p>
+      </section>
+
+      <img class="diagram" src="images/learns-1.png" alt="Diagram of the AI training process: data preparation, model initialization, then a training loop of forward pass, loss, and backpropagation">
+
+      <p class="image-credit">All images from Claude AI</p>
+
+
+      <section class="content-card">
+        <h2 class="card-heading">1. Data Collection &amp; Preparation</h2>
+        <p class="card-text">An AI model is only as good as the data it absorbs. Before any learning happens, raw data (text, images, audio, or numerical logs) must be gathered, cleaned, structured, and labeled.</p>
+        <ul class="card-list">
+          <li>Data Cleaning: Removing duplicates, handling missing fields, and fixing errors.</li>
+          <li>Feature Engineering &amp; Formatting: Transforming raw data into a numerical format that mathematical algorithms can interpret.</li>
+          <li>Sources to Cite:
+            <ul class="card-list">
+              <li>Source: Domino Data Lab – What Is Machine Learning Model Training?</li>
+              <li>Source: Medium (Amit Kharche) – The 7 Stages of Machine Learning</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-heading">2. Model Initialization &amp; Architecture Selection</h2>
+        <p class="card-text">Developers select a model architecture based on the problem they want to solve (e.g., Convolutional Neural Networks for computer vision, or Transformers for language tasks).</p>
+        <ul class="card-list">
+          <li>When the model is first initialized, its internal mathematical parameters—known as weights and biases—are set to random values. At this stage, the AI knows nothing and will output completely random, incorrect guesses.</li>
+          <li>Sources to Cite:
+            <ul class="card-list">
+              <li>Source: Google Cloud Learning Hub – What is a Neural Network &amp; How Does It Work?</li>
+              <li>Source: NVIDIA Developer Documentation – Artificial Neural Network Overview</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-heading">3. Forward Propagation (Making a Guess)</h2>
+        <p class="card-text">During training, data is fed into the model in batches. The input data passes through layers of artificial "neurons," where it is multiplied by the current weights, added to biases, and passed through an activation function.</p>
+        <ul class="card-list">
+          <li>The model evaluates the input and makes a prediction (e.g., guessing whether an image contains a car or a truck).</li>
+          <li>Sources to Cite:
+            <ul class="card-list">
+              <li>Source: InvGate Support Assist – What is a Neural Network (and How Does it Train Itself)?</li>
+              <li>Source: Snowflake ML Guide – ML Model Training: How Optimization Works</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <img class="diagram" src="images/learns-2.png" alt="Diagram about how AI learns">
+
+      <section class="content-card">
+        <h2 class="card-heading">4. Loss Calculation (Measuring the Error)</h2>
+        <p class="card-text">To know how wrong its guess was, the system uses a loss function (or cost function). This is a mathematical formula that compares the model's prediction against the actual ground-truth label.</p>
+        <ul class="card-list">
+          <li>If the model predicts a cat is a dog, the loss function registers a high error score. The ultimate goal of training is to drive this loss value as close to zero as possible.</li>
+          <li>Sources to Cite:
+            <ul class="card-list">
+              <li>Source: Snowflake ML Guide – ML Model Training: How Optimization Works</li>
+              <li>Source: Domino Data Lab – What Is Machine Learning Model Training?</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-heading">5. Backpropagation &amp; Optimization (Adjusting and Learning)</h2>
+        <p class="card-text">This is where the actual "learning" happens. Using a technique called backpropagation, the error is sent backward through the neural network to determine how much each individual weight contributed to the mistake.</p>
+        <ul class="card-list">
+          <li>An optimizer (such as Gradient Descent) then tweaks the weights and biases slightly to correct the error.</li>
+          <li>The model repeats steps 3 through 5 across millions or billions of data examples over multiple iterations (epochs) until its predictions become consistently accurate.</li>
+          <li>Sources to Cite:
+            <ul class="card-list">
+              <li>Source: Google Cloud Learning Hub – What is a Neural Network &amp; How Does It Work?</li>
+              <li>Source: History of Data Science – Artificial Neural Networks: Deeper Learning</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+
+</body>
+</html>

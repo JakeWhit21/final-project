@@ -1,0 +1,304 @@
+/* ---------- Colors from the Figma design ---------- */
+
+:root {
+  --computing-card: #45aeff;
+  --computing-button: #87d3ff;
+  --adapting-card: #ff5555;
+  --adapting-button: #ff7777;
+
+  --nav-bar: #d9d9d9;
+  --computing-nav: #64bafc;
+  --home-nav: #ffbc50;
+
+  --computing-background: #d9f0ff;
+  --adapting-background: #ffd9d9;
+  --about-background: #d2f4d2;
+}
+
+
+/* ---------- Whole page ---------- */
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* ---------- Header and title ---------- */
+
+.site-header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+/* ---------- Hero image ---------- */
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.image-credit {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* ---------- The two topic cards ---------- */
+
+.topics {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.topic-card {
+  width: 245px;
+  min-height: 267px;
+  border-radius: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.computing {
+  background-color: var(--computing-card);
+}
+
+.adapting {
+  background-color: var(--adapting-card);
+}
+
+.topic-title {
+  margin: 0 0 16px 0;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+/* ---------- Buttons inside the cards ---------- */
+
+.topic-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topic-button {
+  display: block;
+  width: 130px;
+  padding: 12px 8px;
+  border-radius: 7px;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.computing .topic-button {
+  background-color: var(--computing-button);
+}
+
+.adapting .topic-button {
+  background-color: var(--adapting-button);
+}
+
+
+/* =========================================================
+   INTERIOR PAGES AND ABOUT PAGE
+   ========================================================= */
+
+
+/* ---------- Page background colors ---------- */
+
+.computing-page {
+  background-color: var(--computing-background);
+}
+
+.adapting-page {
+  background-color: var(--adapting-background);
+}
+
+.about-page {
+  background-color: var(--about-background);
+}
+
+
+/* ---------- Top nav bar ---------- */
+
+.site-nav {
+  background-color: var(--nav-bar);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 6px 20px;
+  list-style: none;
+}
+
+/* The three colored buttons in the nav bar */
+.nav-button {
+  display: block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.computing-nav {
+  width: 188px;
+  background-color: var(--computing-nav);
+}
+
+.home-nav {
+  width: 72px;
+  background-color: var(--home-nav);
+  text-align: center;
+}
+
+.adapting-nav {
+  width: 188px;
+  background-color: var(--adapting-button);
+}
+
+
+/* ---------- Drop-down menus in the nav ---------- */
+
+/* "details" opens and closes when you click its "summary" */
+.nav-dropdown {
+  position: relative;
+}
+
+/* The white panel that shows up when a drop-down is open */
+.dropdown-panel {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 212px;
+  margin: 0;
+  padding: 24px 0;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+/* Keep the Adapting panel from going off the right edge */
+.adapting-panel {
+  right: 0;
+}
+
+/* The buttons inside the drop-down panels reuse .topic-button
+   from the home page, so they only need their colors here */
+.dropdown-panel .computing-link {
+  background-color: var(--computing-button);
+}
+
+.dropdown-panel .adapting-link {
+  background-color: var(--adapting-button);
+}
+
+
+/* ---------- Page content ---------- */
+
+.page-content {
+  width: 684px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.page-title {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+
+/* ---------- White rounded cards that hold the text ---------- */
+
+.content-card {
+  margin-bottom: 20px;
+  padding: 16px 28px;
+  border-radius: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+}
+
+.card-heading {
+  margin: 0 0 4px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-text {
+  margin: 0;
+}
+
+.card-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+
+/* ---------- Diagrams between the cards ---------- */
+
+.diagram {
+  display: block;
+  width: 470px;
+  margin: 0 auto 20px auto;
+  border-radius: 20px;
+}
+
+.wide-diagram {
+  width: 600px;
+}
+
+
+/* ---------- About page ---------- */
+
+.about-content {
+  width: 465px;
+}
+
+.about-card {
+  text-align: center;
+}
+
+.about-heading {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.about-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+}
