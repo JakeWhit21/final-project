@@ -1,6 +1,8 @@
 /* ---------- Colors from the Figma design ---------- */
 
 :root {
+  --index-background: #fff1db;
+
   --computing-card: #45aeff;
   --computing-button: #87d3ff;
   --adapting-card: #ff5555;
@@ -128,6 +130,10 @@ body {
 
 
 /* ---------- Page background colors ---------- */
+
+.index {
+  background-color: var(--index-background);
+}
 
 .computing-page {
   background-color: var(--computing-background);
@@ -301,4 +307,14 @@ body {
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
+}
+
+/* ---------- About button on the home page ---------- */
+
+/* Uses .topic-button for its size and shape,
+   and the About page's green for its color */
+.about-button {
+  margin: 0 auto 40px auto;
+  background-color: var(--about-background);
+  text-align: center;
 }
